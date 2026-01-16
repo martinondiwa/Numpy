@@ -4,7 +4,7 @@
   "metadata": {
     "colab": {
       "provenance": [],
-      "authorship_tag": "ABX9TyNgKi5TAqp3eiekElhK0uUt",
+      "authorship_tag": "ABX9TyNFnheiPdQvWcHrjN2v/9az",
       "include_colab_link": true
     },
     "kernelspec": {
@@ -69,7 +69,7 @@
       "metadata": {
         "id": "P5DrAkaal3oi"
       },
-      "execution_count": null,
+      "execution_count": 5,
       "outputs": []
     },
     {
@@ -78,10 +78,100 @@
         "print(my_list)\n"
       ],
       "metadata": {
-        "id": "g97O8yWYmE_Y"
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "g97O8yWYmE_Y",
+        "outputId": "0d9e2960-6fe2-45f7-caf4-26891cff2614"
       },
-      "execution_count": null,
-      "outputs": []
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[1, 2, 3, 4]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#multiplying my list by 2 (this is a normal python array)\n",
+        "my_list = my_list * 2\n",
+        "print(my_list)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Ramdt3iRmypB",
+        "outputId": "99eb722d-7430-4822-af3d-c115b4edf215"
+      },
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[1, 2, 3, 4, 1, 2, 3, 4]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Creating a numpy array\n",
+        "array = np.array([1, 2, 3, 4])\n",
+        "print(array)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "6NxSzZ8SnLCr",
+        "outputId": "1c6c473a-a9d4-48dd-93c2-da057ffae489"
+      },
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[1 2 3 4]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Checking the type of array\n",
+        "#nd means n imensional\n",
+        "print(type(array))\n",
+        "array = array * 2\n",
+        "print(array)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "CNb8nSatnrk1",
+        "outputId": "f8c04cdf-fb8d-4d94-b78d-45291820d455"
+      },
+      "execution_count": 10,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "<class 'numpy.ndarray'>\n",
+            "[2 4 6 8]\n"
+          ]
+        }
+      ]
     }
   ]
 }
