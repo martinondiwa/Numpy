@@ -4,7 +4,7 @@
   "metadata": {
     "colab": {
       "provenance": [],
-      "authorship_tag": "ABX9TyMuN3gXyz2ncosfwSWfgyOy",
+      "authorship_tag": "ABX9TyOGKR8gFdAOXDH6h8Ia6mXY",
       "include_colab_link": true
     },
     "kernelspec": {
@@ -223,6 +223,33 @@
           "text": [
             "[[1 2 3]\n",
             " [4 5 6]]\n",
+            "2\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#when you arrange them downwards they form like a 2D matrix\n",
+        "array = np.array([[1, 2, 3, 4],\n",
+        "                  ['a', 'b', 'c', 'd'],\n",
+        "                  ['g', 'g', 'f', 'r']])\n",
+        "print(array.ndim)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "NjPfu_Iar2bA",
+        "outputId": "47fba0e0-d54f-4270-e2b4-9f1221518320"
+      },
+      "execution_count": 18,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
             "2\n"
           ]
         }
