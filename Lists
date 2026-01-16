@@ -4,7 +4,7 @@
   "metadata": {
     "colab": {
       "provenance": [],
-      "authorship_tag": "ABX9TyNFnheiPdQvWcHrjN2v/9az",
+      "authorship_tag": "ABX9TyMuN3gXyz2ncosfwSWfgyOy",
       "include_colab_link": true
     },
     "kernelspec": {
@@ -149,7 +149,7 @@
       "cell_type": "code",
       "source": [
         "#Checking the type of array\n",
-        "#nd means n imensional\n",
+        "#nd means number of dimensions\n",
         "print(type(array))\n",
         "array = array * 2\n",
         "print(array)"
@@ -169,6 +169,61 @@
           "text": [
             "<class 'numpy.ndarray'>\n",
             "[2 4 6 8]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "from pathlib import PureWindowsPath\n",
+        "# zero dimensional array\n",
+        "array = np.array('A')\n",
+        "print(array.ndim)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "kd7DDXHQo3_S",
+        "outputId": "d0351ffc-ed58-4066-9607-3882fb4b666c"
+      },
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#multidimensional array\n",
+        "array = np.array([[1, 2, 3], [4, 5, 6]])\n",
+        "print(array)\n",
+        "print(array.ndim)\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "HRMUNyOyrIwr",
+        "outputId": "0cf82a63-1a31-48dd-8596-56018ee48dac"
+      },
+      "execution_count": 13,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[[1 2 3]\n",
+            " [4 5 6]]\n",
+            "2\n"
           ]
         }
       ]
