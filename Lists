@@ -4,7 +4,7 @@
   "metadata": {
     "colab": {
       "provenance": [],
-      "authorship_tag": "ABX9TyOGKR8gFdAOXDH6h8Ia6mXY",
+      "authorship_tag": "ABX9TyNMfP3ImWBCuae7uu/fF0s/",
       "include_colab_link": true
     },
     "kernelspec": {
@@ -213,9 +213,9 @@
           "base_uri": "https://localhost:8080/"
         },
         "id": "HRMUNyOyrIwr",
-        "outputId": "0cf82a63-1a31-48dd-8596-56018ee48dac"
+        "outputId": "edda4ebe-cfff-4ca4-d6b1-a14b3080d355"
       },
-      "execution_count": 13,
+      "execution_count": 21,
       "outputs": [
         {
           "output_type": "stream",
@@ -232,7 +232,8 @@
       "cell_type": "code",
       "source": [
         "#when you arrange them downwards they form like a 2D matrix\n",
-        "array = np.array([[1, 2, 3, 4],\n",
+        "#to achieve 2d array close the matrix within another matrix and add another list\n",
+        "array = np.array([['k', 'g', 'f', 'h'],\n",
         "                  ['a', 'b', 'c', 'd'],\n",
         "                  ['g', 'g', 'f', 'r']])\n",
         "print(array.ndim)\n"
@@ -251,6 +252,119 @@
           "name": "stdout",
           "text": [
             "2\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#3D array\n"
+      ],
+      "metadata": {
+        "id": "hi7PjPOwth_-"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#when you arrange them downwards they form like a 2D matrix\n",
+        "#pay attention to the number of brackets\n",
+        "array = np.array([[[1, 2, 3, 4]],\n",
+        "                  [['a', 'b', 'c', 'd']],\n",
+        "                  [['g', 'g', 'f', 'r']]])\n",
+        "\n",
+        "print(array.ndim)\n",
+        "print (array.shape)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "095f8859-7efa-459d-ffea-a14c43c0cea0",
+        "id": "s4jKLdXPto45"
+      },
+      "execution_count": 23,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "3\n",
+            "(3, 1, 4)\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "T_vqoI9gwL5J"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#when you arrange them downwards they form like a 2D matrix\n",
+        "#pay attention to the number of brackets\n",
+        "array = np.array([[[1, 2, 3, 4], ],\n",
+        "                  [['a', 'b', 'c', 'd']],\n",
+        "                  [['g', 'g', 'f', 'r']]])\n",
+        "\n",
+        "print(array.ndim)\n",
+        "print (array.shape)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "095f8859-7efa-459d-ffea-a14c43c0cea0",
+        "id": "FEk-Ul3gwzmJ"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "3\n",
+            "(3, 1, 4)\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#when you arrange them downwards they form like a 2D matrix\n",
+        "#pay attention to the number of brackets\n",
+        "array = np.array([[[1, 2, 3, 4], [1, 2, 3, 4]],\n",
+        "                  [['a', 'b', 'c', 'd'], ['s', 'd', 't,', 'z']],\n",
+        "                  [['g', 'g', 'f', 'r'], ['t', 'f', 'g', 'p']]])\n",
+        "\n",
+        "print(array.ndim)\n",
+        "print (array.shape)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "648fd5ec-5c16-4654-f832-d6d6070933b6",
+        "id": "_QrH8y6nw8k3"
+      },
+      "execution_count": 24,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "3\n",
+            "(3, 2, 4)\n"
           ]
         }
       ]
